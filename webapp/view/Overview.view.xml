@@ -1,0 +1,34 @@
+<mvc:View
+    controllerName="webapp.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+
+    <Page title="Sap first page">
+        <content>
+            <Panel id="appPanel" headerText="{i18n>countButton}">
+                <content>
+                    <Button id="increment" text="{i18n>countButton}" press=".increment" />
+                    <Text class="header-text" id="counter" text="0" />
+
+                    <List
+                        id="posts-list"
+                        headerText="Posts from the Blog"
+                        items="{postsModel>/}"
+                    >
+                        <items>
+                            <StandardListItem
+                                title="{postsModel>title}"
+                                description="{postsModel>body}"
+                                type="Navigation"
+                                press=".onListItemPress"
+                            />
+                        </items>
+                    </List>
+                </content>
+            </Panel>
+        </content>
+    </Page>
+
+
+</mvc:View>

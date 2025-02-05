@@ -14,3 +14,5 @@ server:
         destinations:
           - name: "postsDestination"
             url: "https://jsonplaceholder.typicode.com/posts"
+          - name: "postByIdDestination"
+            url: "https://jsonplaceholder.typicode.com/posts/:id"

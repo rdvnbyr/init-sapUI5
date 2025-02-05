@@ -1,0 +1,17 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="webapp.controller.Post"
+>
+    <Page title="Post Details" showNavButton="true" navButtonPress=".onNavBack">
+        <Panel headerText="{postsModel>/title}">
+            <content>
+                <StandardListItem
+                    title="{postsModel>title}"
+                    description="{postsModel>body}"
+                />
+            </content>
+        </Panel>
+    </Page>
+
+</mvc:View>
