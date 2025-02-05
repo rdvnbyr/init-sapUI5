@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageToast","sap/ui/model/json/JSONModel"],function(e,t,n){"use strict";return e.extend("webapp.controller.App",{increment:function(){let e=this.getView().byId("counter");let t=parseInt(e.getText());t++;e.setText(t)},onInit:function(){}})});
+//# sourceMappingURL=App.controller.js.map

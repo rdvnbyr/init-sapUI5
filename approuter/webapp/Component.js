@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent"],function(n){"use strict";return n.extend("webapp.Component",{metadata:{manifest:"json",interfaces:["sap.ui.core.IAsyncContentCreation"]},init:function(){n.prototype.init.apply(this,arguments)}})});
+//# sourceMappingURL=Component.js.map

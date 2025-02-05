@@ -1,0 +1,16 @@
+{
+  "init_data": {
+    "subaccount": {
+      "existing_destination_policy": "update",
+      "destinations": [
+        {
+          "Name": "postsDestination",
+          "URL": "https://jsonplaceholder.typicode.com/posts",
+          "Authentication": "NoAuthentication",
+          "ProxyType": "Internet",
+          "Type": "HTTP"
+        }
+      ]
+    }
+  }
+}

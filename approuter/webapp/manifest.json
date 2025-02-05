@@ -1,0 +1,27 @@
+{
+  "sap.app": {
+    "id": "ui5",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "postsAPI": {
+        "uri": "/postsURL/jsonplaceholder.typicode.com/posts",
+        "type": "JSON"
+      }
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "webapp.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "models": {
+      "postsModel": {
+        "dataSource": "postsAPI"
+      }
+    }
+  }
+}

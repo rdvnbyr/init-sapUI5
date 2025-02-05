@@ -1,0 +1,19 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "/postsURL(.*)",
+      "target": "$1",
+      "destination": "postsDestination",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "authenticationType": "none",
+      "localDir": "webapp"
+    }
+  ]
+}

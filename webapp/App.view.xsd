@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="sap.m">
+    <xs:element name="View">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="App">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pages">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Page">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="content">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Button">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="text"
+                                                                            use="required" />
+                                                                        <xs:attribute name="press"
+                                                                            use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="Text">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="text"
+                                                                            use="required" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="title" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="controllerName" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

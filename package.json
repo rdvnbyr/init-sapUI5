@@ -1,0 +1,25 @@
+{
+  "name": "sapui5-init",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ui5 serve -o index.html",
+    "build:mbt": "mbt build -p=cf -t=dist",
+    "build": "mbt build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ui5-middleware-approuter": "^3.5.1",
+    "ui5-middleware-livereload": "^3.1.0"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-approuter",
+      "ui5-middleware-livereload"
+    ]
+  }
+}

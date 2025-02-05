@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="webapp.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Button id="increment" text="Increment" press=".increment" />
+    <Text id="counter" text="0" />
+
+    <List
+        id="posts-list"
+        headerText="Posts from the Blog"
+        items="{postsModel>/}"
+    >
+    <items>
+        <StandardListItem
+            title="{postsModel>title}"
+            description="{postsModel>body}"
+        />
+    </items>
+    </List>
+</mvc:View>
